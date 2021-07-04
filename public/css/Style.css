@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.user {
+    width: 30%;
+    margin: 10% auto;
+    border: 3px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.signup_div, .login_div {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin:10px;
+}
+
+.signup_div.active, .login_div.active{
+    display: flex;
+}
+
+.signup-info {
+    color:red;
+}
+
+.signup_div input, .login_div input {
+    width: 90%;
+    height: 35px;
+    margin:10px 0px;
+    padding-left: 10px;
+    font-size: 25px;
+}
+
+.signup_div button, .login_div button {
+   width: 35%;
+   height: 25px;
+   font-size: 20px;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   margin:10px 0px;
+}
+
+.send_reg, .send_log {
+    background-color: rgb(61, 165, 61);
+    color: white;
+}
+
+.sign, .log {
+    background-color: rgb(226, 178, 19);
+}
+
+.main-header {
+    padding: 15px;
+    background-color: black;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:0px 10px;
+    color: white;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.exit {
+    background-color: white;
+    color: black;
+    padding:3px 5px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.addPhoto, .getPhoto, .getAllPhoto {
+    width: 90%;
+    border:2px solid green;
+    margin:15px auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 25px;
+    box-sizing: border-box;
+}
+
+main h2 {
+    text-align: center;
+    color: rgb(22, 195, 211);
+}
+
+
+.addPhoto form, .getPhoto div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:15px;
+}
+
+.getAllPhoto {
+    padding:15px;
+}
+ 
+.getPhoto input {
+    height: 25px;
+    border:2px solid grey;
+    border-radius: 5px;
+}
+
+.addPhoto input::-webkit-file-upload-button, .addPhoto button, .getPhoto button, .getAllPhoto.button{
+    background-color: grey;
+    color:white;
+    padding:3px 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addPhoto button, .getPhoto button, .getAllPhoto.button{
+    background-color: green;
+    margin:0px 25px;
+}
+
+.photo_div {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-gap: 15px;
+    justify-content: center;
+}
+.photo_div img {
+    width: 300px;
+    height: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/css/Style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <ul class="nav">
+            <li></li>
+            <li><button class="exit">Выйти</button></li>
+        </ul>
+    </header>
+    <main>
+        <div class="addPhoto">
+            <h2>Сохранить фото</h2>
+            <!-- <div encType="multipart/form-data">
+                <input name="photo" type="file" multiple class="file_photo">
+                <button class="add_photo">SEND</button>
+            </div> -->
+            <form  action="/api/file/add" method="POST" id='uploadForm' encType="multipart/form-data">
+                <input name="foo" type="file" multiple>
+                <input type="number" value="">
+                <button types="submit">SEND</button>
+            </form>
+            <div class="photo_info"></div>
+        </div>
+        
+        <div class="getAllPhoto">
+            <h2>Получить все фото</h2>
+            <button class="get_allphoto">Получить все фото</button>
+        </div>
+    </main>
+    <div class="photo">
+    </div>
+    <script src="/public/scripts/upload.js"></script>
+</body>
+</html>
